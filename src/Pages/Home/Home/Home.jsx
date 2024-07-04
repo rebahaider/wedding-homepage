@@ -1,8 +1,9 @@
+import LatestNews from "./LatestNews/LatestNews";
 
 const Home = () => {
     return (
         <div>
-            <h1>heeelllooo home.jsx</h1>
+            <LatestNews></LatestNews>
         </div>
     );
 };
