@@ -1,11 +1,11 @@
 import group from "../../../assets/images/latest-news/Group.png";
 import activeArrow from "../../../assets/images/question/active-arrow.png";
 import arrow from "../../../assets/images/question/arrow.png";
-
 const Question = () => {
     return (
+
         <div className="bg-[#FFF7F8] space-y-8">
-            <div className="mt-20 pt-32">
+            <div className=" pt-32">
                 <h3 className="text-3xl font-bold text-center">Frequently Asked Questions</h3>
                 <img className="mx-auto" src={group} alt="" />
             </div>

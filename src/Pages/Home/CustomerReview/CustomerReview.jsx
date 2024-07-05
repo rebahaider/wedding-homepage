@@ -1,0 +1,137 @@
+import frame from "../../../assets/images/question/frame.png";
+import group from "../../../assets/images/latest-news/Group.png";
+import group1 from "../../../assets/images/latest-news/Group1.png";
+import group2 from "../../../assets/images/latest-news/Group2.png";
+import arrow1 from "../../../assets/images/latest-news/arrow1.png";
+import arrow2 from "../../../assets/images/latest-news/arrow2.png";
+const CustomerReview = () => {
+    return (
+        <div className="bg-[#FFF7F8]">
+            <div className=" pt-32">
+                <h3 className="text-3xl font-bold text-center">See Our Customer Reviews</h3>
+                <img className="mx-auto" src={group} alt="" />
+            </div>
+            {/* slider */}
+            <div>
+                <div className="carousel">
+                    <div id="slide1" className="carousel-item relative w-full">
+                        <div className="grid md:grid-cols-3 gap-40 p-10 mx-auto">
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" className=""><img src={arrow1} alt="" /></a>
+                            <a href="#slide2" className=""><img src={arrow2} alt="" /></a>
+                        </div>
+                    </div>
+                    <div id="slide2" className="carousel-item relative w-full">
+                        <div className="grid md:grid-cols-3 gap-40 p-10 mx-auto">
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                            <div className="w-[300px]">
+                                <div>
+                                    <img src={group1} />
+                                </div>
+                                <div className="text-center">
+                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
+                                        overwhelmed.</p>
+                                    <p className="text-center">Charisma & Cole <br></br>
+
+                                        RICHMOND, VA</p>
+                                </div>
+                                <div>
+                                    <img src={group2} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" className=""><img src={arrow1} alt="" /></a>
+                            <a href="#slide1" className=""><img src={arrow2} alt="" /></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="flex justify-center items-center pb-20">
+                    <button className="bg-[#B32134] text-white font-bold rounded-lg py-4 px-6 ">Signup for free</button>
+                </div>
+            </div>
+            <div className="h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }}>
+
+            </div>
+        </div>
+    );
+};
+
+export default CustomerReview;

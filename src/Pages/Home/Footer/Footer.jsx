@@ -5,8 +5,8 @@ import telegramImg from "../../../assets/images/footer/telegram.png";
 import facebookImg from "../../../assets/images/footer/facebook.png";
 import instagramImg from "../../../assets/images/footer/instagram.png";
 import socialImg from "../../../assets/images/footer/social.png";
-import mansImg from "../../../assets/images/footer/mans.png";
-import ellipseImg from "../../../assets/images/footer/Ellipse 4.png";
+import mansImg from "../../../assets/images/footer/man.png";
+import footerBg from "../../../assets/images/footer/footer-bg.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
@@ -51,20 +51,23 @@ const Footer = () => {
                     <p className="uppercase text-[#F8DBDF]">Coming soon...</p>
                 </nav>
             </footer>
-            <section className="bg-[#F2B7BF] space-y-4 text-center p-10 md:flex justify-around items-center rounded-2xl">
-                <div>
-                    <h2 className="text2xl font-bold uppercase">Are you a vendor?</h2>
-                    <p>Sign up to reach more couples and book more events!</p>
+            <div className="bg-no-repeat bg-cover bg-center rounded-lg pt-4" style={{ backgroundImage: `url(${footerBg})` }}>
+                <div className="md:flex justify-evenly items-center">
+                    <div className="">
+                        <h2 className="text2xl font-bold uppercase">Are you a vendor?</h2>
+                        <p>Sign up to reach more couples and book more events!</p>
+                    </div>
+                    <div >
+                        <img className="" src={mansImg} alt="" />
+                    </div>
+                    <div className="sm:mt-6">
+                        <Link className="bg-[#B32134] text-white px-6 py-2 rounded-lg font-semibold">Start here</Link> <br></br>
+                        <Link className="text-[#B32134] underline "><p className="mt-2">Visit vendor support</p></Link>
+                    </div>
                 </div>
-                <div className="relative">
-                    <img src={ellipseImg} alt="" />
-                    <img className="absolute bottom-0" src={mansImg} alt="" />
-                </div>
-                <div className="text-center sm:mt-6">
-                    <Link className="bg-[#B32134] text-white px-6 py-2 rounded-lg font-semibold">Start here</Link> <br></br>
-                    <Link className="text-[#B32134] underline "><p className="mt-2">Visit vendor support</p></Link>
-                </div>
-            </section>
+            </div>
+
+
             <footer className="footer text-[#CED7DE]">
                 <aside className="grid-flow-col items-center gap-8">
                     <p>Privacy policy</p>
