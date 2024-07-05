@@ -1,3 +1,4 @@
+import Planning from "../Planning/Planning";
 import Question from "../Question/Question";
 import LatestNews from "./LatestNews/LatestNews";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Question></Question>
             <LatestNews></LatestNews>
+            <Planning></Planning>
         </div>
     );
 };

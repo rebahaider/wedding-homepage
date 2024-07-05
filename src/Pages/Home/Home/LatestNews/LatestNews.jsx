@@ -11,7 +11,7 @@ const LatestNews = () => {
                 <h3 className="text-3xl font-bold text-center">Latest News</h3>
                 <img className="mx-auto" src={group} alt="" />
             </div>
-            <div className="grid grid-cols-2 gap-4 max-w-7xl mx-auto mt-10 mb-20">
+            <div className="grid md:grid-cols-2 gap-4 max-w-7xl mx-auto mt-10 mb-20">
                 {/* news 1 */}
                 <div className="flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
                     <figure className="w-full">
@@ -23,7 +23,7 @@ const LatestNews = () => {
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
                         <div className="card-actions">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Reab More</Link>
+                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const LatestNews = () => {
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
                         <div className="card-actions">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Reab More</Link>
+                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const LatestNews = () => {
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
                         <div className="card-actions">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Reab More</Link>
+                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const LatestNews = () => {
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
                         <div className="card-actions">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Reab More</Link>
+                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
