@@ -15,8 +15,8 @@ const CustomerReview = () => {
             <div>
                 <div className="carousel">
                     <div id="slide1" className="carousel-item relative w-full">
-                        <div className="grid md:grid-cols-3 gap-40 p-10 mx-auto">
-                            <div className="w-[300px]">
+                        <div className="grid md:grid-cols-3 gap-40 md:p-10 mx-auto">
+                            <div className="md:w-[300px]">
                                 <div>
                                     <img src={group1} />
                                 </div>
@@ -31,7 +31,7 @@ const CustomerReview = () => {
                                     <img src={group2} alt="" />
                                 </div>
                             </div>
-                            <div className="w-[300px]">
+                            <div className="md:w-[300px]">
                                 <div>
                                     <img src={group1} />
                                 </div>
@@ -46,7 +46,7 @@ const CustomerReview = () => {
                                     <img src={group2} alt="" />
                                 </div>
                             </div>
-                            <div className="w-[300px]">
+                            <div className="md:w-[300px]">
                                 <div>
                                     <img src={group1} />
                                 </div>
@@ -127,7 +127,7 @@ const CustomerReview = () => {
                     <button className="bg-[#B32134] text-white font-bold rounded-lg py-4 px-6 ">Signup for free</button>
                 </div>
             </div>
-            <div className="h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }}>
+            <div className="min-h-screen md:h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }}>
 
             </div>
         </div>
