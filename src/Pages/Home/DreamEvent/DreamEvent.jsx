@@ -5,12 +5,17 @@ import img4 from "../../../assets/images/Home/img4.png";
 import img5 from "../../../assets/images/Home/img5.png";
 import img6 from "../../../assets/images/Home/img6.png";
 import img7 from "../../../assets/images/Home/img7.png";
+import group from "../../../assets/images/latest-news/Group.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const DreamEvent = () => {
     return (
         <div className="bg-[#FFF7F8] pb-20">
+            <div className="pt-20 space-y-4">
+                <h3 className="text-3xl font-bold text-center">Your Dream Team for the Event </h3>
+                <img className="mx-auto" src={group} alt="" />
+            </div>
             <div className="grid md:grid-cols-4 gap-x-6 gap-y-8 max-w-7xl mx-auto mt-10">
                 <div className="card card-compact bg-base-100 shadow-xl">
                     <figure>
