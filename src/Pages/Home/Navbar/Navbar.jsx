@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import coverImg from "../../../assets/images/Home/cover.png";
 import cover2Img from "../../../assets/images/Home/cover2.png";
 import vectorImg from "../../../assets/images/Home/Vector.png";
@@ -11,8 +11,18 @@ import calender from "../../../assets/images/Home/calendar.png";
 import location from "../../../assets/images/Home/location.png";
 import dolar from "../../../assets/images/Home/dolar.png";
 import aiCover from "../../../assets/images/Home/aiCover.png";
+import rightArrow from "../../../assets/images/Home/rightArrow.png";
 import notificationImg from "../../../assets/images/Home/notification (1).png";
 import { IoIosArrowDown } from "react-icons/io";
+// fretures icons
+import icon1 from "../../../assets/images/Home/featuresIcons/icon1.png";
+import icon2 from "../../../assets/images/Home/featuresIcons/icon2.png";
+import icon3 from "../../../assets/images/Home/featuresIcons/icon3.png";
+import icon4 from "../../../assets/images/Home/featuresIcons/icon4.png";
+import icon5 from "../../../assets/images/Home/featuresIcons/icon5.png";
+import icon6 from "../../../assets/images/Home/featuresIcons/icon6.png";
+import icon7 from "../../../assets/images/Home/featuresIcons/icon7.png";
+import icon8 from "../../../assets/images/Home/featuresIcons/icon8.png";
 
 const Navbar = () => {
 
@@ -54,39 +64,113 @@ const Navbar = () => {
                     </div>
                     <div className="navbar-center hidden lg:flex gap-6">
                         {/* vendor */}
-                        <div className="dropdown dropdown-hover ">
-                            <div tabIndex={0} role="button" className=" m-1  hover:text-[#8C1823]">Vendors</div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
-                            </ul>
-                        </div>
+                        <NavLink>
+                            <div className="dropdown dropdown-hover ">
+                                <div tabIndex={0} role="button" className=" m-1  hover:text-[#8C1823]">Vendors</div>
+                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                                    <li><a>Item 1</a></li>
+                                    <li><a>Item 2</a></li>
+                                </ul>
+                            </div>
+                        </NavLink>
                         {/* fatures */}
-                        <div className="dropdown dropdown-hover">
-                            <div tabIndex={0} role="button" className=" m-1 hover:text-[#8C1823]">Features</div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                                <li><a>Item 1</a></li>
-                                <li><a>Item 2</a></li>
-                            </ul>
-                        </div>
-                        {/* about ai */}
-                        <div className="dropdown dropdown-hover">
-                            <div tabIndex={0} role="button" className=" m-1 hover:text-[#8C1823]">About AI</div>
-                            <ul tabIndex={0} className="dropdown-content menu bg-no-repeat bg-cover rounded-box z-[1]" style={{ backgroundImage: `url(${aiCover})`}}>
-                                <div className="w-[1000px]">
-                                    <div className=" text-center">
-                                        <div className="max-w-md">
-                                            <h1 className="text-5xl font-bold">Hello there</h1>
-                                            <p className="py-6">
-                                                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                                quasi. In deleniti eaque aut repudiandae et a id nisi.
-                                            </p>
-                                            <button className="btn btn-primary">Get Started</button>
+                        <NavLink>
+                            <div className="dropdown dropdown-hover">
+                                <div tabIndex={0} role="button" className=" m-1 hover:text-[#8C1823]">Features</div>
+                                <ul tabIndex={0} className="dropdown-content h-[290px] menu bg-base-100 rounded-box z-[1] p-2 shadow">
+                                    <div className="w-[1000px]">
+                                        <div className=" ">
+                                            <div className="space-y-3 pl-10 pb-20">
+                                                <h1 className="text-2xl font-semibold">Features</h1>
+                                                <div className="grid grid-cols-3 gap-10">
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon1} alt="" />
+                                                            <p>Budget management tools</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon2} alt="" />
+                                                            <p>Outfit recommendations</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon3} alt="" />
+                                                            <p>User Registration and Profiles</p>
+
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon4} alt="" />
+                                                            <p>Guest list management</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon5} alt="" />
+                                                            <p>Ticketing and Reservations</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon6} alt="" />
+                                                            <p>Event Listings and Calendars</p>
+
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon7} alt="" />
+                                                            <p>Email Notifications and Reminders</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link>
+                                                        <div className="flex gap-3">
+                                                            <img src={icon8} alt="" />
+                                                            <p>Payment Integration</p>
+                                                        </div>
+                                                    </Link>
+                                                    <Link><div className="flex gap-4">
+                                                        <p className="text-[#B32134] font-bold">See All</p>
+                                                        <img src={rightArrow} alt="" />
+                                                    </div>
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </ul>
-                        </div>
+                                </ul>
+                            </div>
+                        </NavLink>
+                        {/* about ai */}
+                        <NavLink>
+                            <div className="dropdown dropdown-hover">
+                                <div tabIndex={0} role="button" className=" m-1 hover:text-[#8C1823]">About AI</div>
+                                <ul tabIndex={0} className="dropdown-content h-[290px] menu bg-no-repeat bg-cover rounded-box z-[1]" style={{ backgroundImage: `url(${aiCover})` }}>
+                                    <div className="w-[1000px]">
+                                        <div className="hero ">
+                                            <div className="space-y-3 pl-10 pb-20">
+                                                <h1 className="text-2xl font-semibold">Introducing Event Management AI</h1>
+                                                <p className="">
+                                                    Revolutionizing Your Event Experience
+                                                </p>
+                                                <p className="pr-64">
+                                                    Experience the future of event planning with our cutting-edge AI technology. Our AI-driven platform enhances every aspect of your event, from personalized recommendations and seamless logistics to real-time analytics and interactive attendee engagement.
+                                                </p>
+                                                <Link>
+                                                    <div className="flex gap-4 pt-3">
+                                                        <p className="text-[#B32134] font-bold">Learn More</p>
+                                                        <img src={rightArrow} alt="" />
+                                                    </div></Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </NavLink>
                     </div>
 
 
@@ -99,15 +183,15 @@ const Navbar = () => {
                             <span className="indicator-item badge p-1 bg-[#F2B7BF]">999</span>
                             <button><img src={notificationImg} alt="" /></button>
                         </div>
-                        <Link className="text-[#B32134] border border-[#B32134]
-                            px-[26px] py-[10px] rounded-[32px] text-[14px]">Signup</Link>
+                        <Link className="text-[#B32134] hover:bg-[#FFF7F8] border border-[#B32134]
+                            px-12 py-2 rounded-[32px] text-[14px]">Signup</Link>
                     </div>
                 </div>
                 <div className="pt-32">
                     <div className="bg-no-repeat md:bg-contain bg-center min-h-screen text-center pt-4 p-3 md:pt-32" style={{ backgroundImage: `url(${cover2Img})` }}>
                         <div className="space-y-10 pb-4">
                             <h1 className="md:text-5xl font-bold">Create Your Dream Event with <br /> <span className="text-[#B32134]">AI-Powered</span> Precision</h1>
-                            <p className="md:px-64">Welcome to the Future of Wedding Planning! Let our advanced AI technology tailor-make your perfect day. Say goodbye to stress and hello to seamless organization. Explore our curated selection of top-tier vendors, personalized recommendations, and innovative planning tools</p>
+                            <p className="md:px-64">Welcome to the Future of Wedding Planning! Let our advanced AI technology tailor-make your perfect day. <br /> Say goodbye to stress and hello to seamless organization. Explore our curated selection of top-tier vendors, personalized recommendations, and innovative planning tools</p>
                         </div>
                         <div className="space-y-[25px] md:px-64">
                             <div className="grid md:grid-cols-3 gap-4">

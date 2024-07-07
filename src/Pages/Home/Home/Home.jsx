@@ -8,6 +8,7 @@ import LatestNews from "./LatestNews/LatestNews";
 const Home = () => {
     return (
         <div>
+           
             <DreamEvent></DreamEvent>
             <EventTool></EventTool>
             <CustomerReview></CustomerReview>

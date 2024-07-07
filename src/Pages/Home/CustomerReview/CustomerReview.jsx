@@ -4,7 +4,19 @@ import group1 from "../../../assets/images/latest-news/Group1.png";
 import group2 from "../../../assets/images/latest-news/Group2.png";
 import arrow1 from "../../../assets/images/latest-news/arrow1.png";
 import arrow2 from "../../../assets/images/latest-news/arrow2.png";
+import { useRef } from "react";
+
+
 const CustomerReview = () => {
+
+    const iframeRef = useRef(null);
+
+    const handlePlayVideo = () => {
+        if (iframeRef.current) {
+            // Assuming the videoSrc is a YouTube video
+            iframeRef.current.src += "?autoplay=1";
+        }
+    };
     return (
         <div className="bg-[#FFF7F8]">
             <div className=" pt-32">
@@ -75,8 +87,7 @@ const CustomerReview = () => {
                                     <img src={group1} />
                                 </div>
                                 <div className="text-center">
-                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
-                                        overwhelmed.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                     <p className="text-center">Charisma & Cole <br></br>
 
                                         RICHMOND, VA</p>
@@ -90,8 +101,7 @@ const CustomerReview = () => {
                                     <img src={group1} />
                                 </div>
                                 <div className="text-center">
-                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
-                                        overwhelmed.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                     <p className="text-center">Charisma & Cole <br></br>
 
                                         RICHMOND, VA</p>
@@ -105,8 +115,7 @@ const CustomerReview = () => {
                                     <img src={group1} />
                                 </div>
                                 <div className="text-center">
-                                    <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
-                                        overwhelmed.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                     <p className="text-center">Charisma & Cole <br></br>
 
                                         RICHMOND, VA</p>
@@ -121,17 +130,30 @@ const CustomerReview = () => {
                             <a href="#slide1" className=""><img src={arrow2} alt="" /></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div className="flex justify-center items-center pb-20">
                     <button className="bg-[#B32134] text-white font-bold rounded-lg py-4 px-6 ">Signup for free</button>
                 </div>
             </div>
-            <div className="min-h-screen md:h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }}>
+
+            <div className="relative min-h-screen md:h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }} onClick={handlePlayVideo}>
+                <iframe
+                ref={iframeRef}
+                width="560" height="315" 
+                src="https://www.youtube.com/embed/bf2tFixliMA?si=wHsL2LzIaTq0xIJq" 
+                title="YouTube video player" 
+                
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+                allowfullscreen>
+
+                </iframe>
 
             </div>
+
         </div>
     );
 };
 
 export default CustomerReview;
+

@@ -14,32 +14,32 @@ const Footer = () => {
             <footer className="footer text-[#CED7DE]">
                 <nav>
                     <h6 className="text-white font-semibold text-sm uppercase">PLANNING & INSPIRATION</h6>
-                    <a className="link no-underline hover:text-[#B32134]">wedding ideas & etiquette</a>
-                    <a className="link no-underline hover:text-[#B32134]">engagement</a>
-                    <a className="link no-underline hover:text-[#B32134]">parties & events</a>
-                    <a className="link no-underline hover:text-[#B32134]">wedding dresses</a>
-                    <a className="link no-underline hover:text-[#B32134]">gifts</a>
-                    <a className="link no-underline hover:text-[#B32134]">real Wedding photos</a>
-                    <a className="link no-underline hover:text-[#B32134]">community</a>
+                    <Link className="link no-underline hover:text-[#B32134]">wedding ideas & etiquette</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">engagement</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">parties & events</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">wedding dresses</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">gifts</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">real Wedding photos</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">community</Link>
                 </nav>
                 <nav>
                     <h6 className="text-white font-semibold text-sm uppercase">Planning tools</h6>
-                    <a className="link no-underline hover:text-[#B32134]">wedding invitations</a>
-                    <a className="link no-underline hover:text-[#B32134]">checklist</a>
-                    <a className="link no-underline hover:text-[#B32134]">guest list</a>
-                    <a className="link no-underline hover:text-[#B32134]">budget</a>
-                    <a className="link no-underline hover:text-[#B32134]">Seating chart</a>
-                    <a className="link no-underline hover:text-[#B32134]">Hotel Blocks</a>
-                    <a className="link no-underline hover:text-[#B32134]">Cost Guide</a>
+                    <Link className="link no-underline hover:text-[#B32134]">wedding invitations</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">checklist</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">guest list</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">budget</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">seating chart</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">hotel Blocks</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">cost Guide</Link>
                 </nav>
                 <nav>
                     <h6 className="text-white font-semibold text-sm uppercase">Others</h6>
-                    <a className="link no-underline hover:text-[#B32134]">our story</a>
-                    <a className="link no-underline hover:text-[#B32134]">refer a friend</a>
-                    <a className="link no-underline hover:text-[#B32134]">reviews</a>
-                    <a className="link no-underline hover:text-[#B32134]">careers</a>
-                    <a className="link no-underline hover:text-[#B32134]">contact us</a>
-                    <a className="link no-underline hover:text-[#B32134]">help</a>
+                    <Link className="link no-underline hover:text-[#B32134]">our story</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">refer a friend</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">reviews</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">careers</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">contact us</Link>
+                    <Link className="link no-underline hover:text-[#B32134]">help</Link>
                 </nav>
                 <nav className="space-y-5">
                     <h6 className="text-white font-semibold text-sm uppercase">get the name of the app</h6>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </nav>
             </footer>
             <div className="bg-no-repeat bg-cover bg-center rounded-lg pt-4" style={{ backgroundImage: `url(${footerBg})` }}>
-                <div className="md:flex justify-evenly items-center">
+                <div className="md:flex justify-between items-center px-10">
                     <div className="">
                         <h2 className="text2xl font-bold uppercase">Are you a vendor?</h2>
                         <p>Sign up to reach more couples and book more events!</p>
@@ -70,17 +70,17 @@ const Footer = () => {
 
             <footer className="footer text-[#CED7DE]">
                 <aside className="grid-flow-col items-center gap-8">
-                    <p>Privacy policy</p>
-                    <p>Terms of use</p>
-                    <p>AI</p>
+                    <Link>Privacy policy</Link>
+                    <Link>Terms of use</Link>
+                    <Link>AI</Link>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
                     <div className="grid grid-flow-col gap-4 mr-32">
-                        <button><img src={instagramImg} alt="" /></button>
-                        <button><img src={facebookImg} alt="" /></button>
-                        <button><img src={socialImg} alt="" /></button>
-                        <button><img src={telegramImg} alt="" /></button>
-                        <button><img src={twitterImg} alt="" /></button>
+                        <Link to="https://www.instagram.com/" target="_blank"><img src={instagramImg} alt="" /></Link>
+                        <Link to="https://www.facebook.com/" target="_blank"><img src={facebookImg} alt="" /></Link>
+                        <Link to="https://www.youtube.com/" target="_blank"><img src={socialImg} alt="" /></Link>
+                        <Link to="https://telegram.org/" target="_blank"><img src={telegramImg} alt="" /></Link>
+                        <Link to="https://x.com/?lang=en" target="_blank"><img src={twitterImg} alt="" /></Link>
                     </div>
                 </nav>
             </footer>

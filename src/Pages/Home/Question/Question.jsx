@@ -14,9 +14,14 @@ const Question = () => {
                 <div className="bg-white border border-[#F8DBDF] rounded-3xl p-4">
                     <div className="collapse">
                         <input type="radio" name="my-accordion-2" defaultChecked />
-                        <div className="collapse-title text-xl font-medium bg-[#FFF7F8] rounded-xl flex items-center gap-6">
-                            <h3 className="text-lg font-medium">How does your AI vendor team creation feature work?</h3>
-                            <img src={activeArrow} alt="" />
+                        <div className="flex justify-around gap-3 ">
+                            <div className="collapse-title text-xl font-medium bg-[#FFF7F8] rounded-xl flex justify-between items-center gap-6">
+                                <h3 className="text-lg font-medium">How does your AI vendor team creation feature work?</h3>
+                                <img src={activeArrow} alt="Arrow" />
+                            </div>
+                            <div className="collapse-content">
+                                <p>hello</p>
+                            </div>
                         </div>
                     </div>
                     <div className="collapse text-xl font-medium items-center gap-6">
@@ -27,21 +32,21 @@ const Question = () => {
                         </div>
                     </div>
                     <div className="collapse items-center gap-6">
-                        <input type="radio" name="my-accordion-2"  />
+                        <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-xl font-medium rounded-xl flex">
                             <h3 className="text-lg font-medium">Are the vendors recommended by your AI platform vetted and reliable?</h3>
                             <img src={arrow} alt="" />
                         </div>
                     </div>
                     <div className="collapse items-center gap-6">
-                        <input type="radio" name="my-accordion-2"  />
+                        <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-xl font-medium rounded-xl flex">
                             <h3 className="text-lg font-medium">Is there a cost associated with using your AI vendor team creation feature?</h3>
                             <img src={arrow} alt="" />
                         </div>
                     </div>
                     <div className="collapse items-center gap-6">
-                        <input type="radio" name="my-accordion-2"  />
+                        <input type="radio" name="my-accordion-2" />
                         <div className="collapse-title text-xl font-medium rounded-xl flex">
                             <h3 className="text-lg font-medium">What if I have specific requirements or preferences that are not covered by the AI recommendations?</h3>
                             <img src={arrow} alt="" />
