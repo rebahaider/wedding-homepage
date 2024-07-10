@@ -10,7 +10,7 @@ import footerBg from "../../../assets/images/footer/footer-bg.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="bg-[#0B0A0A] py-10 px-20 space-y-6">
+        <div className="bg-[#0B0A0A] py-10 px-10 md:px-20 space-y-6">
             <footer className="footer text-[#CED7DE]">
                 <nav>
                     <h6 className="text-white font-semibold text-sm uppercase">PLANNING & INSPIRATION</h6>
@@ -52,16 +52,16 @@ const Footer = () => {
                 </nav>
             </footer>
             <div className="bg-no-repeat bg-cover bg-center rounded-lg pt-4" style={{ backgroundImage: `url(${footerBg})` }}>
-                <div className="md:flex justify-between items-center px-10">
+                <div className="md:flex justify-between items-center px-3 md:px-10">
                     <div className="">
                         <h2 className="text2xl font-bold uppercase">Are you a vendor?</h2>
                         <p>Sign up to reach more couples and book more events!</p>
                     </div>
                     <div >
-                        <img className="" src={mansImg} alt="" />
+                        <img className="mx-auto" src={mansImg} alt="" />
                     </div>
-                    <div className="sm:mt-6">
-                        <Link className="bg-[#B32134] text-white px-6 py-2 rounded-lg font-semibold">Start here</Link> <br></br>
+                    <div className="pt-5 pb-3 text-center">
+                        <Link className="bg-[#B32134] text-white px-9 py-2 rounded-lg font-semibold">Start here</Link> <br></br>
                         <Link className="text-[#B32134] underline "><p className="mt-2">Visit vendor support</p></Link>
                     </div>
                 </div>
@@ -70,12 +70,12 @@ const Footer = () => {
 
             <footer className="footer text-[#CED7DE]">
                 <aside className="grid-flow-col items-center gap-8">
-                    <Link>Privacy policy</Link>
-                    <Link>Terms of use</Link>
-                    <Link>AI</Link>
+                    <Link className="hover:text-[#B32134]">Privacy policy</Link>
+                    <Link className="hover:text-[#B32134]">Terms of use</Link>
+                    <Link className="hover:text-[#B32134]">AI</Link>
                 </aside>
                 <nav className="md:place-self-center md:justify-self-end">
-                    <div className="grid grid-flow-col gap-4 mr-32">
+                    <div className="grid grid-flow-col gap-4 ml-7 md:mr-32">
                         <Link to="https://www.instagram.com/" target="_blank"><img src={instagramImg} alt="" /></Link>
                         <Link to="https://www.facebook.com/" target="_blank"><img src={facebookImg} alt="" /></Link>
                         <Link to="https://www.youtube.com/" target="_blank"><img src={socialImg} alt="" /></Link>

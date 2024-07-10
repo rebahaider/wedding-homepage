@@ -13,62 +13,62 @@ const LatestNews = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-4 max-w-7xl mx-auto mt-10 mb-20">
                 {/* news 1 */}
-                <div className="flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
+                <div className="md:flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
                     <figure className="w-full">
-                        <img className="rounded-lg h-[271px]"
+                        <img className="rounded-lg w-full h-full"
                             src={news1} alt="picture" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">New Trends in Wedding Decor</h2>
+                        <h2 className="card-title pt-12 pb-4">New Trends in Wedding Decor</h2>
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
-                        <div className="card-actions">
+                        <div className="card-actions pt-6 pb-12">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
+                            px-4 py-2 rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
                 {/* news 2 */}
-                <div className="flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
+                <div className="md:flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
                     <figure className="w-full">
-                        <img className="rounded-lg h-[271px]"
+                        <img className="rounded-lg w-full h-full"
                             src={news2} alt="picture" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">New Trends in Wedding Decor</h2>
+                        <h2 className="card-title pt-12 pb-4">New Trends in Wedding Decor</h2>
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
-                        <div className="card-actions">
+                        <div className="card-actions pt-6 pb-12">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
+                            px-4 py-2 rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
                 {/* news 3 */}
-                <div className="flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
+                <div className="md:flex bg-[#FAFAFA] border border-[#F8DBDF] rounded-3xl">
                     <figure className="w-full">
-                        <img className="rounded-lg h-[271px]"
+                        <img className="rounded-lg w-full h-full"
                             src={news3} alt="picture" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">New Trends in Wedding Decor</h2>
+                        <h2 className="card-title pt-12 pb-4">New Trends in Wedding Decor</h2>
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
-                        <div className="card-actions">
+                        <div className="card-actions pt-6 pb-12">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
+                            px-4 py-2 rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>
                 {/* news 4 */}
-                <div className="flex bg-base-100 border border-[#F8DBDF] rounded-3xl">
+                <div className="md:flex bg-base-100 border border-[#F8DBDF] rounded-3xl">
                     <figure className="w-full">
-                        <img className="rounded-lg h-[271px]"
+                        <img className="rounded-lg w-full h-full"
                             src={news4} alt="picture" />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title">New Trends in Wedding Decor</h2>
+                        <h2 className="card-title pt-12 pb-4">New Trends in Wedding Decor</h2>
                         <p>Discover how couples are incorporating eco-friendly elements into their wedding decor, from recycled materials to locally</p>
-                        <div className="card-actions">
+                        <div className="card-actions pt-6 pb-12">
                             <Link className="text-[#B32134] font-bold border border-[#B32134]
-                            px-[8px] py-[16px] rounded-lg text-[14px]">Read More</Link>
+                            px-4 py-2 rounded-lg text-[14px]">Read More</Link>
                         </div>
                     </div>
                 </div>

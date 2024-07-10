@@ -16,7 +16,7 @@ const DreamEvent = () => {
                 <h3 className="text-3xl font-bold text-center">Your Dream Team for the Event </h3>
                 <img className="mx-auto" src={group} alt="" />
             </div>
-            <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mt-10">
+            <div className="grid md:grid-cols-4 gap-6 lg:px-40 mt-10">
                 <div className="card card-compact bg-base-100 shadow-xl rounded-t-[32px]">
                     <figure>
                         <img className="w-full" src={img1} alt="picture" />

@@ -13,7 +13,6 @@ import dolar from "../../../assets/images/Home/dolar.png";
 import aiCover from "../../../assets/images/Home/aiCover.png";
 import rightArrow from "../../../assets/images/Home/rightArrow.png";
 import notificationImg from "../../../assets/images/Home/notification (1).png";
-import { IoIosArrowDown } from "react-icons/io";
 // fretures icons
 import icon1 from "../../../assets/images/Home/featuresIcons/icon1.png";
 import icon2 from "../../../assets/images/Home/featuresIcons/icon2.png";
@@ -34,7 +33,7 @@ const Navbar = () => {
     return (
         <div className="bg-[#FFF7F8]">
             <div className="bg-no-repeat bg-cover min-h-screen rounded-b-full" style={{ backgroundImage: `url(${coverImg})` }}>
-
+                {/* navbar */}
                 <div className="navbar bg-white rounded-full absolute top-10 md:left-32 md:w-[1105px]">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -191,11 +190,38 @@ const Navbar = () => {
                     <div className="bg-no-repeat md:bg-contain bg-center min-h-screen text-center pt-4 p-3 md:pt-32" style={{ backgroundImage: `url(${cover2Img})` }}>
                         <div className="space-y-10 pb-4">
                             <h1 className="md:text-5xl font-bold">Create Your Dream Event with <br /> <span className="text-[#B32134]">AI-Powered</span> Precision</h1>
-                            <p className="md:px-64">Welcome to the Future of Wedding Planning! Let our advanced AI technology tailor-make your perfect day. <br /> Say goodbye to stress and hello to seamless organization. Explore our curated selection of top-tier vendors, personalized recommendations, and innovative planning tools</p>
+                            <p className="md:px-60">Welcome to the Future of Wedding Planning! Let our advanced AI technology tailor-make your perfect day. Say goodbye to stress and hello to seamless organization. Explore our curated selection of top-tier vendors, personalized recommendations, and innovative planning tools.</p>
                         </div>
                         <div className="space-y-[25px] md:px-64">
                             <div className="grid md:grid-cols-3 gap-4">
-                                <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
+                                <div className=" relative flex items-center">
+                                    <select className="select select-bordered w-full max-w-xs bg-[#FFF7F8] border-[#991C2C] pl-10">
+                                        <option disabled selected>Event Topics</option>
+                                        <option>Beauty Salon</option>
+                                        <option>Bridal Salon</option>
+                                        <option>Caterers</option>
+                                    </select>
+                                    <img className="absolute left-2 top-3" src={list} alt="" />
+                                    </div>
+                                <div className=" relative flex items-center">
+                                    <select className="select select-bordered w-full max-w-xs bg-[#FFF7F8] border-[#991C2C] pl-10">
+                                        <option disabled selected>Event Topics</option>
+                                        <option>Beauty Salon</option>
+                                        <option>Bridal Salon</option>
+                                        <option>Caterers</option>
+                                    </select>
+                                    <img className="absolute left-2 top-3" src={list} alt="" />
+                                    </div>
+                                <div className=" relative flex items-center">
+                                    <select className="select select-bordered w-full max-w-xs bg-[#FFF7F8] border-[#991C2C] pl-10">
+                                        <option disabled selected>Event Topics</option>
+                                        <option>Beauty Salon</option>
+                                        <option>Bridal Salon</option>
+                                        <option>Caterers</option>
+                                    </select>
+                                    <img className="absolute left-2 top-3" src={list} alt="" />
+                                    </div>
+                                {/* <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
                                     <img src={list} alt="" />
                                     <input type="text" className="grow" placeholder="Event topics" />
                                     <button><IoIosArrowDown /></button>
@@ -209,7 +235,7 @@ const Navbar = () => {
                                     <img src={dolar} alt="" />
                                     <input type="text" className="grow" placeholder="Budget" />
                                     <button><IoIosArrowDown /></button>
-                                </label>
+                                </label> */}
                             </div>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
