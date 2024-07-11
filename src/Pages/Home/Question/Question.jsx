@@ -4,7 +4,7 @@ import arrow from "../../../assets/images/question/arrow.png";
 const Question = () => {
     return (
 
-        <div className="bg-[#FFF7F8] space-y-8">
+        <div className="container mx-auto bg-[#FFF7F8] space-y-8">
             <div className=" pt-32">
                 <h3 className="text-3xl font-bold text-center">Frequently Asked Questions</h3>
                 <img className="mx-auto" src={group} alt="" />

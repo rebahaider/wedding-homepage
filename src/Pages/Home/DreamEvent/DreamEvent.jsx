@@ -11,7 +11,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const DreamEvent = () => {
     return (
-        <div className="bg-[#FFF7F8] pb-20">
+        <div className="bg-[#FFF7F8] pb-20 container mx-auto">
             <div className="pt-20 space-y-4">
                 <h3 className="text-3xl font-bold text-center">Your Dream Team for the Event </h3>
                 <img className="mx-auto" src={group} alt="" />

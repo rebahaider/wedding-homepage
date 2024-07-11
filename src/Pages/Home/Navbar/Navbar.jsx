@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="bg-[#FFF7F8]">
             <div className="bg-no-repeat bg-cover min-h-screen rounded-b-full" style={{ backgroundImage: `url(${coverImg})` }}>
                 {/* navbar */}
-                <div className="navbar bg-white rounded-full absolute top-10 md:left-32 md:w-[1105px]">
+                <div className="container mx-auto navbar bg-white rounded-full absolute top-10 md:left-32 md:w-[1105px]">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -186,7 +186,7 @@ const Navbar = () => {
                             px-12 py-2 rounded-[32px] text-[14px]">Signup</Link>
                     </div>
                 </div>
-                <div className="pt-32">
+                <div className="container mx-auto pt-32">
                     <div className="bg-no-repeat md:bg-contain bg-center min-h-screen text-center pt-4 p-3 md:pt-32" style={{ backgroundImage: `url(${cover2Img})` }}>
                         <div className="space-y-10 pb-4">
                             <h1 className="md:text-5xl font-bold">Create Your Dream Event with <br /> <span className="text-[#B32134]">AI-Powered</span> Precision</h1>
@@ -205,37 +205,22 @@ const Navbar = () => {
                                     </div>
                                 <div className=" relative flex items-center">
                                     <select className="select select-bordered w-full max-w-xs bg-[#FFF7F8] border-[#991C2C] pl-10">
-                                        <option disabled selected>Event Topics</option>
+                                        <option disabled selected>Vendor Categories</option>
                                         <option>Beauty Salon</option>
                                         <option>Bridal Salon</option>
                                         <option>Caterers</option>
                                     </select>
-                                    <img className="absolute left-2 top-3" src={list} alt="" />
+                                    <img className="absolute left-2 top-3" src={vendor} alt="" />
                                     </div>
                                 <div className=" relative flex items-center">
                                     <select className="select select-bordered w-full max-w-xs bg-[#FFF7F8] border-[#991C2C] pl-10">
-                                        <option disabled selected>Event Topics</option>
+                                        <option disabled selected>Budget</option>
                                         <option>Beauty Salon</option>
                                         <option>Bridal Salon</option>
                                         <option>Caterers</option>
                                     </select>
-                                    <img className="absolute left-2 top-3" src={list} alt="" />
+                                    <img className="absolute left-2 top-3" src={dolar} alt="" />
                                     </div>
-                                {/* <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
-                                    <img src={list} alt="" />
-                                    <input type="text" className="grow" placeholder="Event topics" />
-                                    <button><IoIosArrowDown /></button>
-                                </label>
-                                <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
-                                    <img src={vendor} alt="" />
-                                    <input type="text" className="grow" placeholder="Vendor categories" />
-                                    <button><IoIosArrowDown /></button>
-                                </label>
-                                <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
-                                    <img src={dolar} alt="" />
-                                    <input type="text" className="grow" placeholder="Budget" />
-                                    <button><IoIosArrowDown /></button>
-                                </label> */}
                             </div>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <label className="input input-bordered bg-[#FFF7F8] border-[#991C2C] flex items-center gap-2">
