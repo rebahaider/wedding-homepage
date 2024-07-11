@@ -10,7 +10,7 @@ import footerBg from "../../../assets/images/footer/footer-bg.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="bg-[#0B0A0A] py-10 px-10 md:px-20 space-y-6">
+        <div className="bg-[#0B0A0A] py-10 px-10 md:px-40 space-y-6">
             <footer className="footer text-[#CED7DE]">
                 <nav>
                     <h6 className="text-white font-semibold text-sm uppercase">PLANNING & INSPIRATION</h6>

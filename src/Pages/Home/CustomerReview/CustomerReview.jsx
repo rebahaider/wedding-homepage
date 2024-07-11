@@ -1,22 +1,14 @@
-import frame from "../../../assets/images/question/frame.png";
 import group from "../../../assets/images/latest-news/Group.png";
 import group1 from "../../../assets/images/latest-news/Group1.png";
 import group2 from "../../../assets/images/latest-news/Group2.png";
 import arrow1 from "../../../assets/images/latest-news/arrow1.png";
 import arrow2 from "../../../assets/images/latest-news/arrow2.png";
-import { useRef } from "react";
+
 
 
 const CustomerReview = () => {
 
-    const iframeRef = useRef(null);
-
-    const handlePlayVideo = () => {
-        if (iframeRef.current) {
-            // Assuming the videoSrc is a YouTube video
-            iframeRef.current.src += "?autoplay=1";
-        }
-    };
+    
     return (
         <div className="bg-[#FFF7F8]">
             <div className=" pt-32">
@@ -31,7 +23,7 @@ const CustomerReview = () => {
                     <div className="grid md:grid-cols-3 gap-6 mx-auto items-center justify-center pb-5">
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -42,7 +34,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -53,7 +45,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -73,7 +65,7 @@ const CustomerReview = () => {
                     <div className="grid md:grid-cols-3 gap-6 mx-auto items-center justify-center pb-5">
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -83,7 +75,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -93,7 +85,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -112,7 +104,7 @@ const CustomerReview = () => {
                     <div className="grid md:grid-cols-3 gap-6 mx-auto items-center justify-center pb-5">
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -123,7 +115,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -134,7 +126,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>I really enjoyed using the Knot App and found it very useful right away. When I began planning, I didn't know where to start. Following the guidelines was super helpful and eased my mind when I felt
                                     overwhelmed.</p>
                                 <p className="text-center">Charisma & Cole <br></br>
@@ -154,7 +146,7 @@ const CustomerReview = () => {
                     <div className="grid md:grid-cols-3 gap-6 mx-auto items-center justify-center pb-5">
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -164,7 +156,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -174,7 +166,7 @@ const CustomerReview = () => {
                         </div>
                         <div className="px-6">
                             <div><img className="mx-auto" src={group1} alt="" /></div>
-                            <div className="text-center px-7 pt-[19px] pb-[19px]">
+                            <div className="text-center  pt-[19px] pb-[19px]">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et culpa laudantium perspiciatis voluptas laboriosam maxime molestiae doloribus, cumque quo, tenetur repudiandae dolorum ut autem consectetur nihil. Quod, fugiat commodi!</p>
                                 <p className="text-center">Charisma & Cole <br></br>
 
@@ -190,20 +182,7 @@ const CustomerReview = () => {
                 </div>
             </div>
             </div>
-            {/* video section */}
-            <div className="relative min-h-screen md:h-[583px] bg-no-repeat bg-cover" style={{ backgroundImage: `url(${frame})` }} onClick={handlePlayVideo}>
-                <iframe
-                    ref={iframeRef}
-                    width="560" height="315"
-                    src="https://www.youtube.com/embed/bf2tFixliMA?si=wHsL2LzIaTq0xIJq"
-                    title="YouTube video player"
-
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-
-                </iframe>
-
-            </div>
+            
 
         </div>
     );
